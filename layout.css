@@ -108,7 +108,8 @@ a:hover {
 /* .rightColumn { border: 1px solid  #ccc; padding: 1.25em; } */
 .rightColumn {
 	border: 1px solid  #fff;
-	font-family: Oswald;
+	/* font-family: Oswald; */
+	font-family: Inconsolata 
 	color: #696969;
 }
 
