@@ -1,4 +1,4 @@
-var userName = "narutaro";
+var userName = "rotaruna";
 //var userName = "P1kachu";
 //var gistId = "b7f2e213e181d2d50f43";
 
