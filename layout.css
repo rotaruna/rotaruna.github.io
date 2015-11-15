@@ -113,7 +113,8 @@ a:hover {
 }
 
 .rightColumnTitle {
-	font-family: Oswald 
+	/* font-family: Oswald  */
+	font-family: Inconsolata 
 }
 
 /* @media screen and (min-width: 47.5em ) { */
