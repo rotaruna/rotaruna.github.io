@@ -82,8 +82,7 @@ a:hover {
 */
 .chip{
 	float: right;
-	/* font-family: Oswald; */
-	font-family: 'Inconsolata', serif;
+	font-family: Oswald;
   padding: 3px 6px;
   margin-right: 8px;
   margin-left: 1px;
@@ -111,14 +110,14 @@ a:hover {
 	border: 1px solid  #fff;
 	/* font-family: Oswald; */
 	/* font-family: Inconsolata  */
-	font-family: 'Inconsolata', serif;
+	/* font-family: 'Inconsolata', serif; */
 	color: #696969;
 }
 
 .rightColumnTitle {
 	/* font-family: Oswald  */
 	/* font-family: Inconsolata  */
-	font-family: 'Inconsolata', serif;
+	/* font-family: 'Inconsolata', serif; */
 }
 
 /* @media screen and (min-width: 47.5em ) { */
