@@ -1,0 +1,126 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+	/* margin: 10; */
+	font-family: 'PT Serif', serif;
+	font-size: 20;
+}
+
+pre {
+	overflow: auto;
+}
+
+code {
+	background-color: #fff;
+	font-family: 'Inconsolata', serif;
+	padding: 14px 19px;
+	line-height: 25px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	-ms-border-radius: 0.4em;
+	-o-border-radius: 0.4em;
+	border-radius: 0.4em;
+	padding: 0 0.3em;
+}
+
+img {
+	height: 48;
+	width: 48;
+  margin-right: 10px;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: #55acee;
+}
+
+.rightColumn li:hover {
+	color: #55acee;
+	cursor: pointer;
+}
+
+/* .profile { float: left; } */
+/* .profile { display: inline-block; } */
+
+/* .columnsContainer { position: relative; margin: .5em; } */
+.columnsContainer { position: relative; margin: 1em; }
+/* .blogTitle { border: 0px solid  #ccc; font-size: 48px; font-weight: bold; margin-bottom: .5em; } */
+.blogTitle {
+	font-size: 6.2em;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.blogSubTitle { 
+	border: 1px solid  #fff;
+	font-size: 22px;
+  margin-top: -13;
+  margin-left: 65px;
+}
+
+.article {
+	margin-top: 80px;
+}
+/*
+.gistId{ 
+	font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 0px;
+	color: #ccc;
+}
+*/
+.chip{
+	float: right;
+	font-family: Oswald;
+  padding: 3px 6px;
+  margin-right: 8px;
+  margin-left: 1px;
+  font-size: 80%;
+  color: white;
+  /* background-color: #3f3f3f; */
+  background-color: #696969; 
+  border-radius: 10px;
+  box-shadow: 0 0 3px #ddd;
+  white-space: nowrap;
+}
+
+.fa-twitter{
+	color: #55acee;
+  font-size: 130%;
+}
+/* .leftColumn { border: 1px solid  #ccc; padding: 1.25em; margin-bottom: .5em; } */
+.leftColumn {
+	border: 1px solid  #fff;
+	padding: .5em;
+	margin-bottom: .5em;
+}
+/* .rightColumn { border: 1px solid  #ccc; padding: 1.25em; } */
+.rightColumn {
+	border: 1px solid  #fff;
+	font-family: Oswald;
+	color: #696969;
+}
+
+.rightColumnTitle {
+	font-family: Oswald 
+}
+
+/* @media screen and (min-width: 47.5em ) { */
+@media screen and (min-width: 770px ) { /* this is optimized for 768px screens to be one column */
+  .leftColumn { margin-right: 19.5em; }
+  .rightColumn { position: absolute; top: 7.5em; right: 0; width: 18.75em; }
+  /* .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; } */
+}
+
+
