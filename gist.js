@@ -102,7 +102,7 @@ $(document).ready(function() {
 	// gistId is given by url query string
 	// TODO need to check if the given gistId is for this user's
 	// TODO show default gistId when given gistId is not correct
-	var defaultGistId = '3205b6008782df4c66f4';
+	var defaultGistId = '0eb33b480201855f5308';
 	var qs = location.search.split('=')[1];
 	function getGistId(qs){
 		if (/^\w{20}$/.test(qs)){
