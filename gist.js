@@ -1,4 +1,4 @@
-var userName = "narutaro";
+var userName = "rotaruna";
 var defaultGistId = '3205b6008782df4c66f4';
 //var profileGistId = '733b4e94aaaeed631098';
 //var userName = "P1kachu";
