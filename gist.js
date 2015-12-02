@@ -1,4 +1,6 @@
-var userName = "rotaruna";
+var userName = "narutaro";
+var defaultGistId = '3205b6008782df4c66f4';
+//var profileGistId = '733b4e94aaaeed631098';
 //var userName = "P1kachu";
 //var gistId = "b7f2e213e181d2d50f43";
 
@@ -9,6 +11,7 @@ $(document).ready(function() {
 	$.getJSON("https://api.github.com/users/" + userName, parseProfile)
 	function parseProfile(profile){
  		$('#profileImage').attr('src', profile.avatar_url);
+ 		$('#profileBio').html(profile.location);
 		console.log("profile");
 		console.log(profile);
 	}
@@ -18,13 +21,14 @@ $(document).ready(function() {
 
 	function filterGists(gists){
 		var gistsFilterd = gists.filter(function(gist){
-		// remove multi file gist. get only markdown format gist(.md)
+			// remove multi file gist. get only markdown format gist(.md)
 			if(Object.keys(gist.files).length == 1 && /(.*)\.md/.test(Object.keys(gist.files))){
 				return true;
 			}
 		});
- 	 console.log("gist list: " + parseList(gistsFilterd));
-	 //console.log(gistsFilterd);
+		parseList(gistsFilterd);
+ 	 //console.log("gist list: " + parseList(gistsFilterd));
+		console.log(gistsFilterd);
 	}
 
 
@@ -78,6 +82,13 @@ $(document).ready(function() {
 		//console.log("content_html" + typeof content_html);	
 		console.log(gist);
 
+		//profile gist goes to right top
+		/*
+		if(id == profileGistID){
+			$(".prifile").text()
+		}
+		*/
+
 		//$(".leftColumn").text("")
 		$(".article").text("")
 		//.append('<p class="gistId">gist id: '+ id + '</p>')
@@ -99,10 +110,9 @@ $(document).ready(function() {
 		return md;
 	}
 
-	// gistId is given by url query string
+	// gistId is given by url query string like username.github.io/?=733b4e94aaaeed631098
 	// TODO need to check if the given gistId is for this user's
 	// TODO show default gistId when given gistId is not correct
-	var defaultGistId = '0eb33b480201855f5308';
 	var qs = location.search.split('=')[1];
 	function getGistId(qs){
 		if (/^\w{20}$/.test(qs)){

@@ -27,18 +27,13 @@ code {
 }
 
 img {
+	width: 100%;
+}
+
+#profileImage {
 	height: 48;
 	width: 48;
   margin-right: 10px;
-}
-
-a:link {
-	color: white;
-	text-decoration: none;
-}
-
-a:visited {
-	color: white;
 }
 
 a:hover {
@@ -95,9 +90,22 @@ a:hover {
   white-space: nowrap;
 }
 
+.chip a:visited {
+	color: white;
+}
+
+.chip a:hover {
+	color: #55acee;
+}
+
+.chip a:link {
+	color: white;
+	text-decoration: none;
+}
+
 .fa-twitter{
 	color: #55acee;
-  font-size: 130%;
+  /* font-size: 130%; */
 }
 /* .leftColumn { border: 1px solid  #ccc; padding: 1.25em; margin-bottom: .5em; } */
 .leftColumn {
@@ -108,16 +116,12 @@ a:hover {
 /* .rightColumn { border: 1px solid  #ccc; padding: 1.25em; } */
 .rightColumn {
 	border: 1px solid  #fff;
-	/* font-family: Oswald; */
-	/* font-family: Inconsolata  */
-	/* font-family: 'Inconsolata', serif; */
+/*	font-family: Roboto; */
 	color: #696969;
 }
 
 .rightColumnTitle {
-	/* font-family: Oswald  */
-	/* font-family: Inconsolata  */
-	/* font-family: 'Inconsolata', serif; */
+/*	font-family: Roboto  */
 }
 
 /* @media screen and (min-width: 47.5em ) { */
