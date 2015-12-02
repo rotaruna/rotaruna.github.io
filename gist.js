@@ -1,5 +1,5 @@
 var userName = "rotaruna";
-var defaultGistId = '3205b6008782df4c66f4';
+var defaultGistId = 'b2f1e50167c272c0f6a0';
 //var profileGistId = '733b4e94aaaeed631098';
 //var userName = "P1kachu";
 //var gistId = "b7f2e213e181d2d50f43";
