@@ -23,6 +23,11 @@ img {
 	width: 100%;
 }
 
+.logo {
+	height: 198px;
+	width: 346px;
+}
+
 #profileImage {
 	height: 48;
 	width: 48;
